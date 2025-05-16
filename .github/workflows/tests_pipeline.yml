@@ -1,5 +1,9 @@
-name: main
-on: [workflow_dispatch]
+name: tests_pipeline
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   checkout:
